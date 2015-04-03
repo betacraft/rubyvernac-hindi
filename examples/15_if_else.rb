@@ -1,0 +1,16 @@
+require 'rubyvernac-marathi'
+
+# if condition
+#    do_something..
+# else
+#    do_this_other_thing..
+# end
+#
+
+नसीब = [सत्य , असत्य ].फेंटो.पहिला
+
+अगर नसीब
+  छापो 'आप किस्मतवाले है!'
+वरना
+  छापो 'अगली बार किस्मत तुम्हारा साथ देगी|'
+समाप्त
