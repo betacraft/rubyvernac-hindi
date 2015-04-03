@@ -1,4 +1,4 @@
-# Rubyvernac::Marathi
+# Rubyvernac::Hindi
 
 
 The idea was to enable writing Ruby in various spoken languages. 
@@ -14,7 +14,7 @@ I see two benefits to be able to write programmes in mother tongue -
 
 Add this line to your application's Gemfile:
 
-    gem 'rubyvernac-marathi'
+    gem 'rubyvernac-hindi'
 
 And then execute:
 
@@ -22,8 +22,8 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem build rubyvernac-marathi.gemspec
-    $ sudo gem install rubyvernac-marathi-0.0.1.gem
+    $ gem build rubyvernac-hindi.gemspec
+    $ sudo gem install rubyvernac-hindi-*.gem
 
 ## Usage
 
