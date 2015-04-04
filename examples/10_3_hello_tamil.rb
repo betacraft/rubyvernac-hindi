@@ -1,4 +1,5 @@
 require 'rubyvernac-hindi'
+require 'rubyvernac-hindi'
 
 #
 # puts ' Hello ! '

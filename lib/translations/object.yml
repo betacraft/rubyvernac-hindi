@@ -65,7 +65,7 @@ object:
     module_eval: ''
     module_exec: ''
     name: "नाम"
-    new: "नए"
+    new: "नया"
     nil?: "शून्य_?"
     object_id: ''
     pretty_inspect: ''

@@ -1,4 +1,4 @@
-require 'rubyvernac-marathi'
+आवश्यक 'rubyvernac-hindi'
 
 # if condition
 #    do_something..
@@ -7,7 +7,7 @@ require 'rubyvernac-marathi'
 # end
 #
 
-नसीब = [सत्य , असत्य ].फेंटो.पहिला
+नसीब = [सच्चा, झूठा].फेंटो.पहलेवाला
 
 अगर नसीब
   छापो 'आप किस्मतवाले है!'

@@ -7,6 +7,10 @@ require "rubyvernac/hindi/version"
 #end
 
 alias :छापो :puts
+alias :छाप :puts
+alias :લિખો :puts
+#alias :छापो :puts
+#alias :छापो :puts
 
 # TODO - dirty fixes
 # for classes -

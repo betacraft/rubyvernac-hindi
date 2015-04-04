@@ -1,4 +1,4 @@
-require 'rubyvernac-marathi'
+आवश्यक 'rubyvernac-hindi'
 
 # a = 2
 # while a > 2
@@ -10,6 +10,6 @@ require 'rubyvernac-marathi'
 नकद = ०
 
 जिसबीच नकद < उधार
-  छाप "आज नकद कल उधार !"
+  छापो "आज नकद कल उधार !"
   नकद += १
 समाप्त

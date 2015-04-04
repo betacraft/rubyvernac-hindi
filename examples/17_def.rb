@@ -1,4 +1,4 @@
-require 'rubyvernac-marathi'
+आवश्यक 'rubyvernac-hindi'
 
 #
 # def namaskar(naav)
@@ -6,12 +6,11 @@ require 'rubyvernac-marathi'
 # end
 #
 
-कार्य नमश्कार(नाम)
-  छापो "नमश्कार #{नाम} !"
+कार्य कितने_आदमी_थे
+  छापो "२ सरकार।"
 समाप्त
-
 
 # namaskar('somename')
 #
 
-नमश्कार('बंडू')
+कितने_आदमी_थे()

@@ -1,8 +1,8 @@
-require 'rubyvernac-marathi'
+आवश्यक 'rubyvernac-hindi'
 
 # n = [true, false].shuffle.first
 #
-नसीब = [सत्य , असत्य ].फेंटो.पहिला
+नसीब = [सच्चा, झूठा].फेंटो.पहलेवाला
 
 # result = if condition then {do this} else {do this}
 #

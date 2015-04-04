@@ -119,7 +119,7 @@ math:
     singleton_class: ''
     singleton_methods: ''
     sinh: "सिंह"
-    sqrt: ''
+    sqrt: 'वर्गमूल'
     taint: "कलंक"
     tainted?: "दागी_?"
     tan: "टैन"

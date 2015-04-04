@@ -5,7 +5,7 @@
 शुरू begin
 विराम break
 स्थिति case
-साँचाclass
+सांचा class
 कार्य def
 करो do
 वरना else
@@ -34,6 +34,7 @@
 जब when
 जिसबीच while
 होनेदे  yield
+आवश्यक require
 ० 0
 १ 1
 २ 2

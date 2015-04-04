@@ -1,5 +1,5 @@
-require 'rubyvernac-marathi'
+आवश्यक 'rubyvernac-hindi'
 
 #Math.sqrt(9)
 #
-# छाप $गणित.वर्गमुळ(२५)
+छापो $गणित.वर्गमूल(२५)

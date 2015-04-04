@@ -1,4 +1,4 @@
-require 'rubyvernac-marathi'
+आवश्यक 'rubyvernac-hindi'
 
 # # Example Code --
 #
@@ -20,7 +20,7 @@ require 'rubyvernac-marathi'
 
 स्थिति पात्र
 जब 'राजा'
-  छापो  ' आप राजे है | '
+  छापो  ' आप राजा है | '
 जब 'मंत्री'
   छापो  'मंत्री!'
 जब 'चोर'

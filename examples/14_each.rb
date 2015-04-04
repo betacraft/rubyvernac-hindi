@@ -1,4 +1,4 @@
-require 'rubyvernac-marathi'
+आवश्यक 'rubyvernac-hindi'
 
 # [a,b,c,d].each do |i|
 #    puts i

@@ -276,7 +276,7 @@ array:
     drop: "ड्रॉप"
     drop_while: ''
     dup: ''
-    each: "प्रत्येक"
+    each: "हरएक"
     each_cons: ''
     each_entry: ''
     each_index: ''
@@ -294,7 +294,7 @@ array:
     find: "खोज"
     find_all: "सभी_ढूंढें"
     find_index: ''
-    first: "प्रथम"
+    first: "पहलेवाला"
     flat_map: ''
     flatten: "समतल_करना"
     flatten!: "समतल_!"
@@ -320,7 +320,7 @@ array:
     join: "शामिल_होने"
     keep_if: ''
     kind_of?: "एक_प्रकार_का?"
-    last: "पिछले"
+    last: "आखिरीवाला"
     lazy: "आलसी"
     length: "लंबाई"
     map: "मेप"
@@ -377,7 +377,7 @@ array:
     send: "भेजो"
     shelljoin: ''
     shift: "पाली"
-    shuffle: "घसीटना"
+    shuffle: 'फेंटो'
     shuffle!: "फेरबदल_!"
     singleton_class: ''
     singleton_methods: ''
