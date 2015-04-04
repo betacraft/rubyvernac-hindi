@@ -1,7 +1,0 @@
-require 'rubyvernac-hindi'
-require 'rubyvernac-hindi'
-
-#
-# puts ' Hello ! '
-#
-छापो " नमस्ते ! "
