@@ -25,8 +25,12 @@ Dir.glob(gem_lib+'/translations/*.yml').each do |filepath|
   # class methods - 
   content.first.last['cpumethods'].each do |k, v|
     #puts "syncing -- #{k} to #{v}"
-    Object.class_eval(class_name).singleton_class.
-      send(:alias_method, v.to_sym, k.to_sym) unless v.chop.length.zero?
+    begin
+    	Object.class_eval(class_name).singleton_class.
+      		send(:alias_method, v.to_sym, k.to_sym) unless v.chop.length.zero?
+    	rescue Exception => e 
+	
+	end
   end
 
   content.first.last['cprmethods'].each do |k, v|
@@ -44,9 +48,12 @@ Dir.glob(gem_lib+'/translations/*.yml').each do |filepath|
   # instance methods - 
   content.first.last['ipumethods'].each do |k, v|
     #puts "synching -- #{k} to #{v}"
-      
-    Object.class_eval(class_name).send(:alias_method, v.to_sym,k.to_sym) unless 
+    begin  
+    	Object.class_eval(class_name).send(:alias_method, v.to_sym,k.to_sym) unless 
                                                     v.chop.length.zero?
+    rescue Exception => e
+	
+    end
   end if content.first.last['ipumethods']
 
   # instance methods - 
