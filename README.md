@@ -30,7 +30,7 @@ Or install it yourself as:
 Install Go 1.4 or later - https://golang.org/doc/install
 Install keyword-parser package.
 
-    $ go get github.com/RainingClouds/keyword-parser
+    $ go get github.com/betacraft/keyword-parser
 
 Run any example code using - 
 
