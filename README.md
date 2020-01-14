@@ -25,21 +25,4 @@ Or install it yourself as:
     $ gem build rubyvernac-hindi.gemspec
     $ sudo gem install rubyvernac-hindi-*.gem
 
-## Usage
 
-Install Go 1.4 or later - https://golang.org/doc/install
-Install keyword-parser package.
-
-    $ go get github.com/betacraft/keyword-parser
-
-Run any example code using - 
-
-    $ keyword-parser examples/{file.rb} ruby lib/tranlsations/keywords.txt  
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/rubyvernac-marathi/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
