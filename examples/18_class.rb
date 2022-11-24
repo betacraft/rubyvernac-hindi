@@ -3,14 +3,17 @@
 #संवाद = ['कितने आदमी थे ?', 'ये हाथ मुझे दे दे ठाकुर!', 'बहुत याराना लगता है !']
 
 #
-# class Student
-#   attr_accessible :name
+# class Gabbar
 #
-#  def passed?
-#    puts 'something when passed'
-#    return true
+#  def speak
+#    dialogs = ['How many people were three?', 'Give these hands to me Thakur', 'You seems to be friends']
+#    
+#    puts dialogs.shuffle.first
 #  end
 # end
+#
+# villan = Gabbar.new
+# villan.speak
 #
 
 सांचा गब्बर
