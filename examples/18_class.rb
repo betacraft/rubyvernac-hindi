@@ -12,8 +12,8 @@
 #  end
 # end
 #
-# villan = Gabbar.new
-# villan.speak
+# villain = Gabbar.new
+# villain.speak
 #
 
 सांचा गब्बर
