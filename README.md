@@ -14,7 +14,7 @@ I see two benefits to be able to write programmes in mother tongue -
 
 Add this line to your application's Gemfile:
 
-    gem 'rubyvernac-hindi'
+    gem 'rubyvernac-hindi', git: "https://github.com/betacraft/rubyvernac-hindi"
 
 And then execute:
 
@@ -23,6 +23,18 @@ And then execute:
 Or install it yourself as:
 
     $ gem build rubyvernac-hindi.gemspec
-    $ sudo gem install rubyvernac-hindi-*.gem
+    $ sudo gem install rubyvernac-hindi-0.0.1.gem
 
+## Usage
 
+Run any example code using - 
+
+    $ ruby_hindi <file-path-here>
+
+## Contributing
+
+1. Fork it ( https://github.com/[my-github-username]/rubyvernac-hindi/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request

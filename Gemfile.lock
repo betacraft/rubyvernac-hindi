@@ -1,0 +1,34 @@
+GIT
+  remote: https://github.com/betacraft/ruby-vernac-parser
+  revision: b211eac63037e34fe1b019a0b328ae9db22b2083
+  specs:
+    ruby-vernac-parser (0.0.1)
+
+PATH
+  remote: .
+  specs:
+    rubyvernac-hindi (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coderay (1.1.3)
+    method_source (1.0.0)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    rake (10.3.2)
+    yaml (0.2.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  pry (~> 0.14.1)
+  rake (~> 10.3.2)
+  ruby-vernac-parser!
+  rubyvernac-hindi!
+  yaml (~> 0.2.0)
+
+BUNDLED WITH
+   2.3.25
