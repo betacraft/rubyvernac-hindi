@@ -9,4 +9,4 @@ gem "pry", "~> 0.14.1"
 
 gem "yaml", "~> 0.2.0"
 
-gem 'ruby-vernac-parser', git: 'https://github.com/betacraft/ruby-vernac-parser'
+gem 'ruby-vernac-parser', git: 'https://github.com/betacraft/ruby-vernac-parser', branch: "main"
