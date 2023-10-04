@@ -1,10 +1,15 @@
 require 'rubyvernac/hindi'
+require 'ruby-vernac-parser'
 require 'yaml'
 require 'pry'
+
 
 spec = Gem::Specification.find_by_name("rubyvernac-hindi")
 gem_root = spec.gem_dir
 gem_lib = gem_root + "/lib"
+
+parser = RubyVernacParser.new
+
 # create aliases
 #puts "Creating aliases"
 Dir.glob(gem_lib+'/translations/*.yml').each do |filepath|
@@ -26,9 +31,8 @@ Dir.glob(gem_lib+'/translations/*.yml').each do |filepath|
   content.first.last['cpumethods'].each do |k, v|
     #puts "syncing -- #{k} to #{v}"
     begin
-      Object.class_eval(class_name).singleton_class.
-        send(:alias_method, v.to_sym, k.to_sym) unless v.chop.length.zero?
-    rescue
+      parser.alias_class_method(class_name, k, v) unless v.chop.length.zero?
+    rescue Exception => e
 
     end
   end
@@ -36,9 +40,8 @@ Dir.glob(gem_lib+'/translations/*.yml').each do |filepath|
   content.first.last['cprmethods'].each do |k, v|
     #puts "synching -- #{k} to #{v}"
     begin
-      Object.class_eval(class_name).singleton_class.
-        send(:alias_method, v.to_sym, k.to_sym) unless v.chop.length.zero?
-    rescue
+      parser.alias_class_method(class_name, k, v) unless v.chop.length.zero?
+    rescue Exception => e
 
     end
 
@@ -49,9 +52,8 @@ Dir.glob(gem_lib+'/translations/*.yml').each do |filepath|
   content.first.last['ipumethods'].each do |k, v|
     #puts "synching -- #{k} to #{v}"
     begin
-      Object.class_eval(class_name).send(:alias_method, v.to_sym,k.to_sym) unless
-                                                    v.chop.length.zero?
-    rescue
+      parser.alias_instance_method(class_name, k, v) unless v.chop.length.zero?
+    rescue Exception => e
 
     end
   end if content.first.last['ipumethods']
@@ -60,11 +62,8 @@ Dir.glob(gem_lib+'/translations/*.yml').each do |filepath|
   content.first.last['iprmethods'].each do |k, v|
     #puts "synching -- #{k} to #{v}"
     begin
-      if k.to_sym.in? [:respond_to_missing?, :method_missing]
-        next
-      end
-      Object.class_eval(class_name).send(:alias_method, v.to_sym,k.to_sym) unless
-                                                    v.chop.length.zero?
+      next if k.to_sym.in?([:respond_to_missing?, :method_missing])
+      parser.alias_instance_method(class_name, k, v) unless v.chop.length.zero?
     rescue Exception => e
 
     end

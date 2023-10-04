@@ -1,42 +1,45 @@
-__ENCODING__
-__LINE__
-__FILE__
-BEGIN
-END
-alias
-and
-begin
-break
-case
-class
-def
-defined?
-do
-else
-elsif
-end
-ensure
-false
-for
-if
-in
-module
-next
-nil
-not
-or
-redo
-rescue
-retry
-return
-self
-super
-then
-true
-undef
-unless
-until
-when
-while
-yield
-puts
+शुरुआत BEGIN
+आखिर END
+उपनाम alias
+और and
+शुरू begin
+विराम break
+स्थिति case
+सांचा class
+कार्य def
+करो do
+वरना else
+समाप्त end
+सुनिश्चित ensure
+इसलिए for
+अगर if
+में in
+गुण module
+अगला next
+कुछनहीं nil
+नहीं not
+अथवा or
+छापो puts
+फिरसेकरो redo
+आवश्यक require
+बचाव rescue
+पुनःप्रयास retry
+लौटा return
+स्वयं self
+ऊपर super
+फिर then
+अगरनही unless
+जबतक until
+जब when
+जिसबीच while
+होनेदे yield
+० 0
+१ 1
+२ 2
+३ 3
+४ 4
+५ 5
+६ 6
+७ 7
+८ 8
+९ 9

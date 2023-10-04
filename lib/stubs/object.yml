@@ -192,7 +192,7 @@ object:
     protected: "संरक्षित"
     public: "सार्वजनिक"
     putc: ''
-    puts: "पुट"
+    puts: "छापो"
     raise: "उठाना"
     rand: "हाशिया"
     readline: ''
@@ -352,7 +352,7 @@ object:
     printf: ''
     proc: ''
     putc: ''
-    puts: "पुट"
+    puts: "छापो"
     raise: "उठाना"
     rand: "हाशिया"
     readline: ''

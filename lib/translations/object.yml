@@ -1,6 +1,6 @@
 ---
 object:
-  cname: "वस्तु"
+  cname: 
   cpumethods:
     "!": "!"
     "!=": "=!"
@@ -13,61 +13,71 @@ object:
     "=~": "=_~"
     ">": ">"
     ">=": "=>"
-    __binding__: ''
     __id__: ''
     __send__: __भेजो__
-    allocate: "आवंटित"
-    ancestors: "पूर्वजों"
+    alias_method: ''
+    allocate: आवंटित
+    ancestors: पूर्वजों
+    attr: ''
+    attr_accessor: ''
+    attr_reader: ''
+    attr_writer: ''
     autoload: ''
     autoload?: ''
-    class: "कक्षा"
+    class: सांचा
     class_eval: ''
     class_exec: ''
     class_variable_defined?: ''
     class_variable_get: ''
     class_variable_set: ''
     class_variables: ''
-    clone: "क्लोन"
+    clone: क्लोन
     const_defined?: ''
     const_get: ''
     const_missing: ''
     const_set: ''
-    constants: "स्थिरांक"
+    const_source_location: 
+    constants: स्थिरांक
+    define_method: ''
     define_singleton_method: ''
-    display: "प्रदर्शन"
+    deprecate_constant: 
+    display: प्रदर्शन
     dup: ''
     enum_for: ''
     eql?: ''
-    equal?: "बराबर?"
-    extend: "विस्तार"
-    freeze: "फ्रीज"
-    frozen?: "जमे_हुए_?"
-    gem: "रत्न"
-    hash: "गड़बड़"
-    include?: "में_शामिल_हैं?"
+    equal?: बराबर?
+    extend: विस्तार
+    freeze: फ्रीज
+    frozen?: जमे_हुए_?
+    gem: मणि
+    hash: गड़बड़
+    include: समाविष्ट_करणे
+    include?: में_शामिल_हैं?
     included_modules: ''
-    inspect: "निरीक्षण"
+    inspect: निरीक्षण
     instance_eval: ''
     instance_exec: ''
     instance_method: ''
     instance_methods: ''
-    instance_of?: "का_उदाहरण?"
+    instance_of?: का_उदाहरण?
     instance_variable_defined?: ''
     instance_variable_get: ''
     instance_variable_set: ''
-    instance_variables: "आवृत्ति_के_चर"
-    is_a?: "एक_है?"
+    instance_variables: आवृत्ति_के_चर
+    is_a?: एक_है?
+    itself: 
     json_creatable?: ''
-    kind_of?: "एक_प्रकार_का?"
-    method: "विधि"
+    kind_of?: एक_प्रकार_का?
+    method: विधि
     method_defined?: ''
-    methods: "विधियों"
+    methods: विधियों
     module_eval: ''
     module_exec: ''
-    name: "नाम"
-    new: "नया"
-    nil?: "शून्य_?"
+    name: नाम
+    new: नए
+    nil?: शून्य_?
     object_id: ''
+    prepend: लावलेच
     pretty_inspect: ''
     pretty_print: ''
     pretty_print_cycle: ''
@@ -81,9 +91,6 @@ object:
     protected_instance_methods: ''
     protected_method_defined?: ''
     protected_methods: ''
-    pry: "जिज्ञासा"
-    psych_to_yaml: ''
-    psych_yaml_as: ''
     public_class_method: ''
     public_constant: ''
     public_instance_method: ''
@@ -95,138 +102,120 @@ object:
     rake_extension: ''
     remove_class_variable: ''
     remove_instance_variable: ''
-    respond_to?: "का_जवाब?"
-    send: "भेजो"
+    remove_method: ''
+    respond_to?: का_जवाब?
+    send: भेजो
     singleton_class: ''
+    singleton_class?: ''
+    singleton_method: ''
     singleton_methods: ''
-    superclass: "सुपर_क्लास"
-    taint: "कलंक"
-    tainted?: "दागी_?"
-    tap: "नल"
+    subclasses: 
+    superclass: सुपर_क्लास
+    taint: कलंक
+    tainted?: दागी_?
+    tap: नल
+    then: फिर
     to_enum: ''
     to_json: ''
     to_s: ''
     to_yaml: ''
-    to_yaml_properties: ''
-    trust: "भरोसा"
+    trust: भरोसा
+    undef_method: ''
     untaint: ''
     untrust: ''
-    untrusted?: "अविश्वस्त_?"
-    yaml_as: ''
+    untrusted?: अविश्वस्त_?
     yaml_tag: ''
-    byebug: ''
-    debugger: "डिबगर"
-    include: "शामिल"
-    prepend: "पहले_जोड़ें"
-    singleton_class?: ''
-    singleton_method: ''
+    yield_self: 
   cprmethods:
-    Array: "ऐरे"
-    Complex: "जटिल"
-    DelegateClass: ''
-    Digest: "संग्रह"
-    Float: "फ्लोट"
-    Hash: "गड़बड़"
-    Integer: "पूर्णांक"
+    Array: ऐरे
+    Complex: जटिल
+    Digest: संग्रह
+    Float: फ्लोट
+    Hash: गड़बड़
+    Integer: पूर्णांक
     JSON: ''
     Pathname: ''
-    Rational: "तर्कसंगत"
-    String: "तार"
+    Rational: तर्कसंगत
+    String: तार
+    URI: यूआरआई
     __callee__: ''
     __dir__: ''
     __method__: ''
     "`": "`"
-    abort: "गर्भपात"
-    alias_method: ''
+    abort: गर्भपात
     at_exit: ''
-    attr: ''
-    attr_accessor: ''
-    attr_reader: ''
-    attr_writer: ''
-    binding: "बाध्यकारी"
+    binding: बाध्यकारी
     block_given?: ''
-    caller: "फोन_करने_वाले"
+    caller: फोन_करने_वाले
     caller_locations: ''
-    catch: "पकड़"
-    define_method: ''
+    catch: पकड़
     eval: ''
-    exec: "चलाना"
-    exit: "बाहर_जाएं"
-    exit!: "बाहर_जाएं!"
-    extended: "विस्तृत"
-    fail: "असफल"
-    fork: "कांटा"
-    format: "प्रारूप"
+    exec: चलाना
+    exit: बाहर_जाएं
+    exit!: बाहर_जाएं!
+    extended: विस्तृत
+    fail: असफल
+    fork: कांटा
+    format: प्रारूप
     gem_original_require: ''
-    gets: "हो_जाता_है"
-    global_variables: "सार्वत्रिक_चर"
-    include: "समाविष्ट_कर"
-    included: "शामिल"
-    inherited: "विरासत_में_मिला"
-    initialize: "हस्ताक्षर_करना"
+    gets: हो_जाता_है
+    global_variables: सार्वत्रिक_चर
+    included: शामिल
+    inherited: विरासत_में_मिला
+    initialize: हस्ताक्षर_करना
     initialize_clone: ''
     initialize_copy: ''
     initialize_dup: ''
     iterator?: ''
-    j: "जम्मू"
-    jj: "जेजे"
-    lambda: "लैम्ब्डा"
-    load: "लोड"
+    j: जम्मू
+    jj: जेजे
+    lambda: लैम्ब्डा
+    load: लोड
     local_variables: ''
-    loop: "पाश"
+    loop: पाश
     method_added: ''
     method_missing: ''
     method_removed: ''
     method_undefined: ''
-    open: "खुली"
-    open_uri_original_open: ''
-    p: "पी"
-    pp: "पीपी"
-    prepend: "लावलेच"
-    prepend_features: ''
+    open: खुली
+    p: पी
+    pp: पीपी
     prepended: ''
-    print: "छाप"
+    print: छाप
     printf: ''
-    private: "निजी"
+    private: निजी
     proc: ''
-    protected: "संरक्षित"
-    public: "सार्वजनिक"
+    protected: संरक्षित
+    public: सार्वजनिक
     putc: ''
-    puts: "पुट"
-    raise: "उठाना"
-    rand: "हाशिया"
+    puts: छापो
+    raise: उठाना
+    rand: हाशिया
     readline: ''
     readlines: ''
     remove_const: ''
-    remove_method: ''
-    require: "की_आवश्यकता_होती_है"
+    require: आवश्यक
     require_relative: ''
     respond_to_missing?: ''
-    rubygems_require: ''
-    select: "चुनना"
+    ruby2_keywords: 
+    select: चुनना
     set_trace_func: ''
     singleton_method_added: ''
     singleton_method_removed: ''
     singleton_method_undefined: ''
-    sleep: "नींद"
-    spawn: "अंडे_देना"
+    sleep: नींद
+    spawn: अंडे_देना
     sprintf: ''
     srand: ''
     syscall: ''
-    system: "प्रणाली"
-    test: "टेस्ट"
-    throw: "फेंक"
+    system: प्रणाली
+    test: टेस्ट
+    throw: फेंक
     trace_var: ''
-    translate: "अनुवाद_करें"
-    trap: "चक्रव्यूह"
-    undef_method: ''
+    trap: चक्रव्यूह
     untrace_var: ''
-    warn: "चेतावनी_देना"
-    URI: "यूआरआई"
-    default_src_encoding: ''
-    gem: "मणि"
-    timeout: "समय_समाप्त"
-    using: "का_उपयोग_करते_हुए"
+    using: का_उपयोग_करते_हुए
+    warn: चेतावनी_देना
   ipumethods:
     "!": "!"
     "!=": "=!"
@@ -235,35 +224,35 @@ object:
     "==": "=="
     "===": "==="
     "=~": "=_~"
-    __binding__: ''
     __id__: ''
     __send__: __भेजो__
-    class: "कक्षा"
-    clone: "क्लोन"
+    class: सांचा
+    clone: क्लोन
     define_singleton_method: ''
-    display: "प्रदर्शन"
+    display: प्रदर्शन
     dup: ''
     enum_for: ''
     eql?: ''
-    equal?: "बराबर?"
-    extend: "विस्तार"
-    freeze: "फ्रीज"
-    frozen?: "जमे_हुए_?"
-    gem: "रत्न"
-    hash: "गड़बड़"
-    inspect: "निरीक्षण"
+    equal?: बराबर?
+    extend: विस्तार
+    freeze: फ्रीज
+    frozen?: जमे_हुए_?
+    gem: मणि
+    hash: गड़बड़
+    inspect: निरीक्षण
     instance_eval: ''
     instance_exec: ''
-    instance_of?: "का_उदाहरण?"
+    instance_of?: का_उदाहरण?
     instance_variable_defined?: ''
     instance_variable_get: ''
     instance_variable_set: ''
-    instance_variables: "आवृत्ति_के_चर"
-    is_a?: "एक_है?"
-    kind_of?: "एक_प्रकार_का?"
-    method: "विधि"
-    methods: "विधियों"
-    nil?: "शून्य_?"
+    instance_variables: आवृत्ति_के_चर
+    is_a?: एक_है?
+    itself: 
+    kind_of?: एक_प्रकार_का?
+    method: विधि
+    methods: विधियों
+    nil?: शून्य_?
     object_id: ''
     pretty_inspect: ''
     pretty_print: ''
@@ -272,114 +261,104 @@ object:
     pretty_print_instance_variables: ''
     private_methods: ''
     protected_methods: ''
-    pry: "जिज्ञासा"
-    psych_to_yaml: ''
     public_method: ''
     public_methods: ''
     public_send: ''
     remove_instance_variable: ''
-    respond_to?: "का_जवाब?"
-    send: "भेजो"
+    respond_to?: का_जवाब?
+    send: भेजो
     singleton_class: ''
+    singleton_method: ''
     singleton_methods: ''
-    taint: "कलंक"
-    tainted?: "दागी_?"
-    tap: "नल"
+    taint: कलंक
+    tainted?: दागी_?
+    tap: नल
+    then: फिर
     to_enum: ''
     to_json: ''
     to_s: ''
     to_yaml: ''
-    to_yaml_properties: ''
-    trust: "भरोसा"
+    trust: भरोसा
     untaint: ''
     untrust: ''
-    untrusted?: "अविश्वस्त_?"
-    byebug: ''
-    debugger: "डिबगर"
-    singleton_method: ''
+    untrusted?: अविश्वस्त_?
+    yield_self: 
   iprmethods:
-    Array: "ऐरे"
-    Complex: "जटिल"
-    DelegateClass: ''
-    Digest: "संग्रह"
-    Float: "फ्लोट"
-    Hash: "गड़बड़"
-    Integer: "पूर्णांक"
+    Array: ऐरे
+    Complex: जटिल
+    Digest: संग्रह
+    Float: फ्लोट
+    Hash: गड़बड़
+    Integer: पूर्णांक
     JSON: ''
     Pathname: ''
-    Rational: "तर्कसंगत"
-    String: "तार"
+    Rational: तर्कसंगत
+    String: तार
+    URI: यूआरआई
     __callee__: ''
     __dir__: ''
     __method__: ''
     "`": "`"
-    abort: "गर्भपात"
+    abort: गर्भपात
     at_exit: ''
     autoload: ''
     autoload?: ''
-    binding: "बाध्यकारी"
+    binding: बाध्यकारी
     block_given?: ''
-    caller: "फोन_करने_वाले"
+    caller: फोन_करने_वाले
     caller_locations: ''
-    catch: "पकड़"
+    catch: पकड़
     eval: ''
-    exec: "चलाना"
-    exit: "बाहर_जाएं"
-    exit!: "बाहर_जाएं!"
-    fail: "असफल"
-    fork: "कांटा"
-    format: "प्रारूप"
+    exec: चलाना
+    exit: बाहर_जाएं
+    exit!: बाहर_जाएं!
+    fail: असफल
+    fork: कांटा
+    format: प्रारूप
     gem_original_require: ''
-    gets: "हो_जाता_है"
-    global_variables: "सार्वत्रिक_चर"
-    initialize: "हस्ताक्षर_करना"
+    gets: हो_जाता_है
+    global_variables: सार्वत्रिक_चर
+    initialize: हस्ताक्षर_करना
     initialize_clone: ''
     initialize_copy: ''
     initialize_dup: ''
     iterator?: ''
-    j: "जम्मू"
-    jj: "जेजे"
-    lambda: "लैम्ब्डा"
-    load: "लोड"
+    j: जम्मू
+    jj: जेजे
+    lambda: लैम्ब्डा
+    load: लोड
     local_variables: ''
-    loop: "पाश"
+    loop: पाश
     method_missing: ''
-    open: "खुली"
-    open_uri_original_open: ''
-    p: "पी"
-    pp: "पीपी"
-    print: "छाप"
+    open: खुली
+    p: पी
+    pp: पीपी
+    print: छाप
     printf: ''
     proc: ''
     putc: ''
-    puts: "पुट"
-    raise: "उठाना"
-    rand: "हाशिया"
+    puts: छापो
+    raise: उठाना
+    rand: हाशिया
     readline: ''
     readlines: ''
-    require: "की_आवश्यकता_होती_है"
+    require: आवश्यक
     require_relative: ''
     respond_to_missing?: ''
-    rubygems_require: ''
-    select: "चुनना"
+    select: चुनना
     set_trace_func: ''
     singleton_method_added: ''
     singleton_method_removed: ''
     singleton_method_undefined: ''
-    sleep: "नींद"
-    spawn: "अंडे_देना"
+    sleep: नींद
+    spawn: अंडे_देना
     sprintf: ''
     srand: ''
     syscall: ''
-    system: "प्रणाली"
-    test: "टेस्ट"
-    throw: "फेंक"
+    system: प्रणाली
+    test: टेस्ट
+    throw: फेंक
     trace_var: ''
-    translate: "अनुवाद_करें"
-    trap: "चक्रव्यूह"
+    trap: चक्रव्यूह
     untrace_var: ''
-    warn: "चेतावनी_देना"
-    URI: "यूआरआई"
-    default_src_encoding: ''
-    gem: "मणि"
-    timeout: "समय_समाप्त"
+    warn: चेतावनी_देना

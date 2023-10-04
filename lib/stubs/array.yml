@@ -195,7 +195,7 @@ array:
     protected: "संरक्षित"
     public: "सार्वजनिक"
     putc: ''
-    puts: "पुट"
+    puts: "छापो"
     raise: "उठाना"
     rand: "हाशिया"
     readline: ''
@@ -474,7 +474,7 @@ array:
     printf: ''
     proc: ''
     putc: ''
-    puts: "पुट"
+    puts: "छापो"
     raise: "उठाना"
     rand: "हाशिया"
     readline: ''
