@@ -1,16 +1,21 @@
 #!/usr/bin/env ruby
-`bundle install`
+
+# Install ruby gems and load them
 require "bundler"
+`bundle install`
 Bundler.setup(:default)
 require "ruby-vernac-parser"
 
 if ARGV.size < 1
-  print "Provide a script file\n"
+  puts "Provide a script file"
+elsif !File.exists?(Dir.pwd + "/bin/.file_based_translations_completed") || !File.exists?(Dir.pwd + "/bin/.language_based_translations_completed")
+  puts "Please run rake setup::fetch_translations"
 else
   spec = Gem::Specification.find_by_name("rubyvernac-hindi")
   keyword_file_path = spec.gem_dir + "/lib/translations/keywords.txt"
 
-  parser = RubyVernacParser.new(source_file: ARGV[0],
+  parser = RubyVernacParser.new(
+    source_file: ARGV[0],
     keywords_file: keyword_file_path
   )
 
