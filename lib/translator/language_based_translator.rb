@@ -4,48 +4,50 @@ require_relative 'stubbed_translator_api'
 
 module Translator
   class LanguageBasedTranslator
-    CONFIG = {
-      classes: ["Array", "Class", "Object", "Integer", "Math"],
-      methods: {
-        public_methods: 'cpumethods',
-        private_methods: 'cprmethods',
-        instance_methods: 'ipumethods',
-        private_instance_methods: 'iprmethods'
-      }
-    }.freeze
 
-    def initialize(lang_code: , translations_path:)
+    def initialize(lang_code: , translations_path:, filename:)
       @lang_code = lang_code
       @translations_path = translations_path
+      @filename = filename
 
-      # @translator_api = GoogleTranslatorApi.instance
-      @translator_api = StubbedTranslatorApi.new
+      @translator_api = ENV['STUB_CLOUD_APIS'] == 'true' ? StubbedTranslatorApi.new : GoogleTranslatorApi.instance
     end
 
     def generate_translations
-      CONFIG[:classes].each do |klass|
-        klass = eval(klass) # Note: Fixnum -> Integer
-        content = {}
-        class_name = klass.name.downcase
+      content = YAML.load_file(class_file_path)
 
-        # place to keep class's name -
-        content[class_name] = content[class_name] || {}
-        content[class_name]['cname'] = @translator_api.translate(klass.name, @lang_code)
+      base_class_name = @filename.split('.')[0]
+      method_types = content[base_class_name].keys
+      method_types.each do |method_type|
+        next if method_type == "cname"
 
-        class_name = klass.name.downcase
-        CONFIG[:methods].each do |method, key|
-          klass.send(method).sort.each do |method_name|
-            content[class_name][key] = content[class_name][key] || {}
-            content[class_name][key][method_name.to_s] = @translator_api.translate(method_name.to_s, @lang_code)
-          end
-        end
-
-        translation_path = "#{@translations_path}/#{class_name}.yml"
-        File.open(translation_path, 'w+') do |f|
-          f.write( content.to_yaml )
+        method_names = content[base_class_name][method_type].keys
+        method_names.each do |method_name|
+          content[base_class_name][method_type][method_name] = translate_text(method_name)
         end
       end
+
+      content[base_class_name]['cname'] = translate_text(content[base_class_name]['cname'])
+      write_content_to_file(content.to_yaml)
     end
+
+    private
+      def class_file_path
+        "#{@translations_path}/#{@filename}"
+      end
+
+      def write_content_to_file(content)
+        File.open(class_file_path, 'w') do |f|
+          f.write(content)
+        end
+      end
+
+      def translate_text(text)
+        @translator_api.translate(text, @lang_code)
+      rescue TranslationFailedException => e
+        puts e.message
+        return ''
+      end
 
   end
 end

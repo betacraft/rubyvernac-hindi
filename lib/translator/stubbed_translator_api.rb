@@ -1,10 +1,13 @@
 require "google/cloud/translate/v3"
 require 'dotenv/load'
 
+require_relative '../exceptions/translation_failed_exception'
+
 module Translator
   class StubbedTranslatorApi
 
     def translate(word, _lang_code)
+      raise TranslationFailedException.new(word) if !translation_mappings.key?(word)
       translation_mappings[word]
     end
 
@@ -28,7 +31,12 @@ module Translator
       keywords_stub = YAML.load_file("lib/stubs/keywords.yml")
       mappings.merge!(keywords_stub)
 
-      mappings
+      stringified_mappings = {}
+      mappings.each do |key, val|
+        stringified_mappings[key.to_s] = val
+      end
+
+      stringified_mappings
     end
 
   end

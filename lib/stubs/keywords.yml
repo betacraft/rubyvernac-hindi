@@ -9,7 +9,7 @@ class: सांचा
 def: कार्य
 do: करो
 else: वरना
-elseif: फिरअगर
+elsif: फिरअगर
 end: समाप्त
 ensure: सुनिश्चित
 false: झूठा
