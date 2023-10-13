@@ -5,7 +5,7 @@ module Rubyvernac
 
     class StubbedTranslatorApi
 
-      def initialize(stubbed_translations: 'lib/templates/lib/rubyvernac/stubs')
+      def initialize(stubbed_translations: 'lib/rubyvernac/stubs')
         @stubbed_translations = stubbed_translations
       end
 

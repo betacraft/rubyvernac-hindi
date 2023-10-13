@@ -1,14 +1,12 @@
-GIT
-  remote: https://github.com/betacraft/ruby-vernac-parser
-  revision: aee855a404e6d6ae8a98de2ca00280c8f414b5ef
-  branch: main
-  specs:
-    ruby-vernac-parser (0.0.1)
-
 PATH
   remote: .
   specs:
     rubyvernac-hindi (0.0.1)
+
+PATH
+  remote: /home/ashish/projects/ruby-vernac-parser
+  specs:
+    ruby-vernac-parser (0.0.1)
 
 GEM
   remote: https://rubygems.org/

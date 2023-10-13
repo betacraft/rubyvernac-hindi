@@ -11,10 +11,7 @@ gem "dotenv", "~> 2.8"
 gem "google-cloud-translate-v3", "~> 0.5"
 
 gem 'ruby-vernac-parser', git: 'https://github.com/betacraft/ruby-vernac-parser', branch: "main"
-<<<<<<< Updated upstream
-=======
 
 group :development do
   gem "pry-nav", "~> 1.0"
 end
->>>>>>> Stashed changes
