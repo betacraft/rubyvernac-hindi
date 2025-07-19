@@ -1,5 +1,4 @@
 require 'yaml'
-require 'pry'
 require 'google_translate'
 
 namespace :setup do 
