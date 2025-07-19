@@ -5,7 +5,9 @@ gemspec
 
 gem 'rake', '~> 10.3.2'
 
-gem "pry", "~> 0.14.1"
+group :development do
+  gem "pry", "~> 0.14.1"
+end
 
 gem "yaml", "~> 0.2.0"
 

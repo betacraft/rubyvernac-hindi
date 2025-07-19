@@ -1,6 +1,5 @@
 require 'rubyvernac/hindi'
 require 'yaml'
-require 'pry'
 
 spec = Gem::Specification.find_by_name("rubyvernac-hindi")
 gem_root = spec.gem_dir
