@@ -11,4 +11,4 @@ end
 
 gem "yaml", "~> 0.2.0"
 
-gem 'ruby-vernac-parser', git: 'https://github.com/betacraft/ruby-vernac-parser', branch: "main"
+gem 'ruby-vernac-parser', git: 'https://github.com/betacraft/ruby-vernac-parser', branch: "deprecated"
